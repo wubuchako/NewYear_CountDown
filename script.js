@@ -30,5 +30,11 @@ function updateCountdown(){
 
 }
 
+//Show spinner before countdown
+setTimeout(()=> {
+    loading.remove();
+    countdown.style.display = 'flex';
+}, 1000);
+
 //Run every seconds
 setInterval(updateCountdown, 1000);
